@@ -24,6 +24,13 @@ if analysis.sentiment.polarity > 0:
         elif analysis.sentiment.polarity < -0.25: 
             return 'sad'
 ```
+For selecting the person/ organisation whose tweets/related ones are to analysed can be done by chaning this code:
+```
+# calling function to get tweets 
+    tweets = api.get_tweets(query = 'Narendra Modi', count = 300000) 
+```
+Here we have given the name = 'Narendra Modi' with analysis on 300,000 tweets!
+
 ### The Result:
 Out of all the tweets scanned for its sentiments, there are: 
 
